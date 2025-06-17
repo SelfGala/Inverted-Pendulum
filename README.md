@@ -111,6 +111,13 @@ $$
 
 # 2. Double-loop PID simulating with Mujoco
 
+使用双环 PID 控制器与DeepMind Control Suite的Mujoco倒立摆模型实现仿真
+
+
+## 🟠数学建模：一阶倒立摆动力学模型
+
+以标准的 **一阶倒立摆（Single Inverted Pendulum on a Cart）** 为研究对象，其动力学可由拉格朗日方程推导：
+
 <p align="center">
-  <img src="Photos/Cartpole.gif" width="400"/>
+  <img src="Photos/Cartpole模型.jpg" width="400"/>
 </p>
