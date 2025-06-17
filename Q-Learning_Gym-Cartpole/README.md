@@ -5,7 +5,7 @@
 **780 Episode**后Cartpole表现：
 
 <p align="center">
-  <img src="Photos/Cartpole.gif" width="400"/>
+  <img src="https://raw.githubusercontent.com/SelfGala/Inverted-Pendulum/main/Photos/Cartpole.gif" width="400"/>
 </p>
 
 ## 🟠环境简介
