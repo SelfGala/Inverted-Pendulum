@@ -200,12 +200,22 @@ $$
 
 对其应用`pidtune`: [Kpid, ~, ~] = pidtune(P_bai, 'PID')，我们可以得到：
 
-- Kp: 449.4918
-- Ki: 801.4594
-- Kd: 56.3668
+- K_p= 449.4918
+- K_i= 801.4594
+- K_d= 56.3668
 
 通过构建仿真闭环系统的bode图、单位阶跃响应、单位脉冲响应，我们可以看到在一定时间后，输出已经收敛：
 
 <p align="center">
   <img src="Photos/Bode_angle.png" width="1100"/>
 </p>
+
+## 🟠dm_control Mujoco仿真设计
+
+我们应用Deepmind构建的Cartpole模型来对倒立摆进行仿真，具体xml模型文件请见文件夹，其中
+
+<details>
+  <summary>
+    🎯 示例
+  </summary>
+</details>
