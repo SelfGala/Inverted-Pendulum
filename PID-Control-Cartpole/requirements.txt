@@ -1,0 +1,4 @@
+numpy>=1.20
+matplotlib>=3.5
+dm-control==1.0.10
+absl-py>=1.0
