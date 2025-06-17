@@ -5,7 +5,7 @@
 780 Episode后Cartpole表现：
 
 <p align="center">
-  <img src="Photos/Cartpole.gif" width="500"/>
+  <img src="Photos/Cartpole.gif" width="400"/>
 </p>
 
 ## 🟠环境简介
