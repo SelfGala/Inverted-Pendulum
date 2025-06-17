@@ -110,3 +110,7 @@ $$
 ---
 
 # 2. Double-loop PID simulating with Mujoco
+
+<p align="center">
+  <img src="Photos/Cartpole.gif" width="400"/>
+</p>
