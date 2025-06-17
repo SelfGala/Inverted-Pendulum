@@ -179,5 +179,5 @@ $$
 </p>
 
 <p align="center">
-  <img src="Photos/Solution_Y.png" width="350"/>
+  <img src="Photos/Solution_Y.png" width="250"/>
 </p>
