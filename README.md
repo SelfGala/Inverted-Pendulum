@@ -157,7 +157,7 @@ $$
 对两个运动方程进行近似处理、线性化处理，cos(θ)=-1，sin(θ)=-Φ；再进行拉普拉斯变换，得到：
 
 <p align="center">
-  <img src="Photos/Laplace.png" width="400"/>
+  <img src="Photos/Laplace.png" width="350"/>
 </p>
 
 由拉普拉斯变换解出两个方向的传递函数，控制系统的状态空间方程可写成如下形式：
@@ -175,9 +175,9 @@ $$
 根据运动方程组和拉普拉斯变换对ẍ和Φ̈ 求解可得解如下：
 
 <p align="center">
-  <img src="Photos/Solution_X.png" width="400"/>
+  <img src="Photos/Solution_X.png" width="500"/>
 </p>
 
 <p align="center">
-  <img src="Photos/Solution_Y.png" width="400"/>
+  <img src="Photos/Solution_Y.png" width="350"/>
 </p>
