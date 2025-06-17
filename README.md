@@ -107,3 +107,6 @@ $$
 - 总训练局数为 `1000` 局
 - 当连续 100 局游戏的平均得分达到或超过 `195` 时，训练提前终止，并输出成功提示信息
 
+---
+
+# 2. Cartpole with Double-loop PID simulating with Mujoco
