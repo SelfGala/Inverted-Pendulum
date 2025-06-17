@@ -13,7 +13,7 @@
 以标准的 **一阶倒立摆（Single Inverted Pendulum on a Cart）** 为研究对象，下图为**参考一阶倒立摆**模型：
 
 <p align="center">
-  <img src="Inverted-Pendulum/Photos/Cartpole-math-model.jpg" width="500"/>
+  <img src="https://raw.githubusercontent.com/SelfGala/Inverted-Pendulum/main/Photos/Cartpole-math-model.jpg" width="500"/>
 </p>
 
 ### 系统参数
@@ -52,7 +52,7 @@ $$
 对两个运动方程进行近似处理、线性化处理，cos(θ)=-1，sin(θ)=-Φ；再进行拉普拉斯变换，得到：
 
 <p align="center">
-  <img src="Inverted-Pendulum/Photos/Laplace.png" width="350"/>
+  <img src="https://raw.githubusercontent.com/SelfGala/Inverted-Pendulum/main/Photos/Laplace.png" width="350"/>
 </p>
 
 由拉普拉斯变换解出两个方向的传递函数，控制系统的状态空间方程可写成如下形式：
@@ -70,11 +70,11 @@ $$
 根据运动方程组和拉普拉斯变换对ẍ和Φ̈ 求解可得解如下：
 
 <p align="center">
-  <img src="Inverted-Pendulum/Photos/Solution_X.png" width="500"/>
+  <img src="https://raw.githubusercontent.com/SelfGala/Inverted-Pendulum/main/Photos/Solution_X.png" width="500"/>
 </p>
 
 <p align="center">
-  <img src="Inverted-Pendulum/Photos/Solution_Y.png" width="250"/>
+  <img src="https://raw.githubusercontent.com/SelfGala/Inverted-Pendulum/main/Photos/Solution_Y.png" width="250"/>
 </p>
 
 ## 🟠PID控制器设计
@@ -96,7 +96,7 @@ $$
 通过构建仿真闭环系统的bode图、单位阶跃响应、单位脉冲响应，我们可以看到在一定时间后，输出已经收敛：
 
 <p align="center">
-  <img src="Inverted-Pendulum/Photos/Bode_angle.png" width="1100"/>
+  <img src="https://raw.githubusercontent.com/SelfGala/Inverted-Pendulum/main/Photos/Bode_angle.png" width="1100"/>
 </p>
 
 ## 🟠dm_control Mujoco仿真设计
