@@ -3,6 +3,7 @@
 <h1>Single-Inverted-Pendulum-学习合集</h1>
 <p><i>1. 强化学习Q-learning算法解决Gym的Cartpole-v1模型</i></p>
 <p><i>2. 双环PID控制一阶倒立摆Mujoco仿真</i></p>
+
 <p><i>具体代码及README文件见各项目文件夹</i></p>
 
 </div>
@@ -112,7 +113,15 @@ $$
 
 使用双环（角度+位置）PID 控制器与DeepMind Control Suite的Mujoco倒立摆模型实现仿真
 
-下图为**参考一阶倒立摆**模型：
+调整双闭环PID控制器参数后Cartpole表现：
+
+<p align="center">
+  <img src="Photos/dm_control_cartpole.gif" width="400"/>
+</p>
+
+## 🟠数学建模：一阶倒立摆动力学模型
+
+以标准的 **一阶倒立摆（Single Inverted Pendulum on a Cart）** 为研究对象，下图为**参考一阶倒立摆**模型：
 
 <p align="center">
   <img src="Photos/Cartpole-math-model.jpg" width="400"/>
@@ -128,8 +137,6 @@ $$
 | `g`      | 重力加速度       | 米/秒² (m/s²)| -9.81                |
 | `b`      | 摩擦阻尼系数     | 牛·秒/米 (N·s/m) | 0.1              |
 
-## 🟠数学建模：一阶倒立摆动力学模型
-
 ### 系统状态变量
 
 | 符号            | 含义                     | 单位           |
@@ -139,7 +146,7 @@ $$
 | `θ` (theta)     | 摆杆偏离竖直的角度       | 弧度 (rad)     |
 | `θ̇` (theta_dot) | 摆杆角速度               | 弧度/秒 (rad/s)|
 
-以标准的 **一阶倒立摆（Single Inverted Pendulum on a Cart）** 为研究对象，其动力学可由拉格朗日方程推导：
+其动力学方程可由拉格朗日方程推导：
 
 **水平方向**运动方程：
 
