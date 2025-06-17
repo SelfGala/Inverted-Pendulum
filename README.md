@@ -57,7 +57,7 @@ CartPole 是一个一阶倒立摆环境，其任务是通过移动小车来保�
 
 ## 🟠Q-Learning公式（更新Q表）
 
-Q-learning 算法通过以下公式不断Q表：更新状态-动作函数 \( Q(s, a) \)：
+Q-learning 算法通过以下公式不断Q表：更新状态-动作函数 Q(s, a)：
 
 $$
 Q(s_t, a_t) \leftarrow (1 - \alpha) \cdot Q(s_t, a_t) + \alpha \cdot \left[ r_t + \gamma \cdot \max_{a'} Q(s_{t+1}, a') \right]
@@ -82,7 +82,7 @@ $$
 - **ε** 随着训练进程逐步衰减:
 
 $$
-ε = 0.5 × (0.99^n) (n为Episode)
+ε = 0.5 × (0.99^n), (n为Episode)
 $$
 
 - 在每次决策中，以`1-ε`的概率选择当前 Q 表中最优动作，以 ε 的概率随机选择动作。
