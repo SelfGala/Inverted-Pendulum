@@ -124,7 +124,7 @@ $$
 以标准的 **一阶倒立摆（Single Inverted Pendulum on a Cart）** 为研究对象，下图为**参考一阶倒立摆**模型：
 
 <p align="center">
-  <img src="Photos/Cartpole-math-model.jpg" width="200"/>
+  <img src="Photos/Cartpole-math-model.jpg" width="500"/>
 </p>
 
 ### 系统参数
