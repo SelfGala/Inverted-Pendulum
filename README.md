@@ -189,5 +189,5 @@ PID控制器的参数`Kp,Ki,Kd`通过经验数据或试凑法很难进行调整�
 s⁴ + 0.11·s³ − 33.06·s² − 2.694·s
 
 <p align="center">
-  <img src="Photos/Bode_angle.png" width="900"/>
+  <img src="Photos/Bode_angle.png" width="1100"/>
 </p>
