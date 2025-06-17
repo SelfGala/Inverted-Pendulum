@@ -212,10 +212,29 @@ $$
 
 ## 🟠dm_control Mujoco仿真设计
 
-我们应用Deepmind构建的Cartpole模型来对倒立摆进行仿真，具体xml模型文件请见文件夹，其中
+我们应用Deepmind构建的Cartpole模型来对倒立摆进行仿真，具体xml模型文件请见文件夹，其中需要注意的是xml默认质量根据物体体积计算，默认密度为水的密度：1000kg/m^3
 
-<details>
-  <summary>
-    🎯 示例
-  </summary>
-</details>
+dm_control-Cartpole默认引用方法具体见文件夹，模型参数说明见下：
+
+### 模型结构摘要
+
+| 元素       | 名称/属性         | 类型         | 说明                             |
+|------------|------------------|--------------|----------------------------------|
+| `cart`     | Joint: `slider`  | slide joint  | 小车沿 X 方向滑动，范围 ±1 m     |
+| `pole`     | Joint: `hinge`   | hinge joint  | 摆杆绕 Y 轴旋转（垂直平面内）    |
+| `floor`    | Geom             | plane        | 地面（静态）                    |
+| `cpole`    | Geom             | capsule      | 摆杆形状，0.6m 长度               |
+| `cart`     | Geom             | box          | 小车主体，长 0.2m 宽 0.1m 高 0.05m|
+| `mocap1` / `mocap2` | Body    | mocap        | 可视参考物体，不参与控制        |
+
+---
+
+### 控制与执行机制
+
+| 组件类型      | 名称         | 属性             | 说明                         |
+|---------------|--------------|------------------|------------------------------|
+| `actuator`    | `slide`      | motor            | 控制小车（作用于 slider 关节）|
+|               | gear = `50`  |                  | 增益放大倍数                  |
+|               | ctrlrange = `[-1, 1]` |          | 控制范围（实际力：±50N）     |
+| `sensor`      | `accelerometer` | on `cart sensor` | 小车加速度                    |
+|               | `touch`      | on `cart sensor` | 碰撞检测                      |
