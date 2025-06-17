@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>🧠 强化学习经典项目合集</h1>
+<h1>Inverted-Pendulum-倒立摆学习合集</h1>
 <p><i>Reinforcement Learning Projects Collection</i></p>
 
 </div>
