@@ -91,7 +91,7 @@ try:
                 print('%d Episode finished after %f time steps / mean %f' % (episode+1, t+1, last_time_steps.mean()))
                 last_time_steps = np.hstack((last_time_steps[1:], [episode_reward]))  # 更新最近100场游戏的得分stack
                 break
-                # 如果最近100场平均得分高于195,输出训练成功！
+                # 如果最近100场平均得分高于195,输出训练成功
             if (last_time_steps.mean() >= goal_average_steps):
                 print('Episode %d train agent successfuly!' % episode)
                 raise Getoutofloop()
