@@ -10,7 +10,7 @@
 
 ---
 
-# 1. Q-Learning
+# 1️⃣ Q-Learning
 
 使用 Q-learning 强化学习训练 OpenAI Gym 中的经典平衡控制任务 **CartPole-v1**。
 
@@ -109,7 +109,7 @@ $$
 
 ---
 
-# 2. Double-loop PID simulating with Mujoco
+# 2️⃣ Double-loop PID simulating with Mujoco
 
 使用双环 PID 控制器与DeepMind Control Suite的Mujoco倒立摆模型实现仿真
 
@@ -142,13 +142,13 @@ $$
 
 以标准的 **一阶倒立摆（Single Inverted Pendulum on a Cart）** 为研究对象，其动力学可由拉格朗日方程推导：
 
-水平方向运动方程：
+**水平方向**运动方程：
 
 $$
 F = (M + m)·ẍ + b·ẋ + m·l·θ̈·cos(θ) − m·l·(θ̇)²·sin(θ)
 $$
 
-竖直方向运动方程：
+**竖直方向**运动方程：
 
 $$
 P - m·g = -m·l·θ̈·sin(θ) - m·l·(θ̇)²·cos(θ)
@@ -157,7 +157,7 @@ $$
 对两个运动方程进行近似处理、线性化处理，cos(θ)=-1，sin(θ)=-Φ；再进行拉普拉斯变换，得到：
 
 <p align="center">
-  <img src="Photos/Laplace.jpg" width="400"/>
+  <img src="Photos/Laplace.png" width="400"/>
 </p>
 
 由拉普拉斯变换解出两个方向的传递函数，控制系统的状态空间方程可写成如下形式：
@@ -170,14 +170,14 @@ $$
 Y=CX+Du
 $$
 
-u表示系统控制输入向量，x表示系统状态变量，y表示系统的输出向量，A表示系统的状态矩阵，B表示系统控制输入矩阵，C表示系统输出观测矩阵，D表示系统输入输出矩阵。
+> u表示系统控制输入向量，x表示系统状态变量，y表示系统的输出向量，A表示系统的状态矩阵，B表示系统控制输入矩阵，C表示系统输出观测矩阵，D表示系统输入输出矩阵。
 
 根据运动方程组和拉普拉斯变换对ẍ和Φ̈ 求解可得解如下：
 
 <p align="center">
-  <img src="Photos/Solution_X.jpg" width="400"/>
+  <img src="Photos/Solution_X.png" width="400"/>
 </p>
 
 <p align="center">
-  <img src="Photos/Solution_Y.jpg" width="400"/>
+  <img src="Photos/Solution_Y.png" width="400"/>
 </p>
