@@ -1,7 +1,10 @@
 <div align="center">
 
-<h1>Inverted-Pendulum-倒立摆学习合集</h1>
-<p><i>Reinforcement Learning Projects Collection</i></p>
+<h1>Single-Inverted-Pendulum-学习合集</h1>
+<p><i>1. 强化学习Q-learning算法解决Gym的Cartpole-v1模型</i></p>
+<p><i>2. Matlab模糊PID模拟一阶倒立摆</i></p>
+<p><i>3. 双环PID控制一阶倒立摆Mujoco仿真</i></p>
+<p><i>项目文件夹内有各README.md</i></p>
 
 </div>
 
