@@ -4,7 +4,7 @@
 <p><i>1. 强化学习Q-learning算法解决Gym的Cartpole-v1模型</i></p>
 <p><i>2. 双环PID控制一阶倒立摆Mujoco仿真</i></p>
 <p><i>3. Matlab模糊PID模拟一阶倒立摆</i></p>
-<p><i>项目文件夹内有各README.md</i></p>
+<p><i>具体代码及README文件见各项目文件夹</i></p>
 
 </div>
 
@@ -182,6 +182,12 @@ $$
   <img src="Photos/Solution_Y.png" width="250"/>
 </p>
 
-
-
 ## 🟠PID控制器设计
+
+PID控制器的参数`Kp,Ki,Kd`通过经验数据或试凑法很难进行调整得到合适的控制器，我们在得到传递函数之后，可以通过matlab的`pidtune`函数来对参数进行一个简单的设计。
+
+s⁴ + 0.11·s³ − 33.06·s² − 2.694·s
+
+<p align="center">
+  <img src="Photos/Bode_angle.png" width="500"/>
+</p>
