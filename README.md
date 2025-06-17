@@ -10,7 +10,7 @@
 
 ---
 
-# 1. CartPole-v1 with Q-Learning
+# 1. Q-Learning
 
 使用 Q-learning 强化学习训练 OpenAI Gym 中的经典平衡控制任务 **CartPole-v1**。
 
@@ -109,4 +109,4 @@ $$
 
 ---
 
-# 2. Cartpole with Double-loop PID simulating with Mujoco
+# 2. Double-loop PID simulating with Mujoco
