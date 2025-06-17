@@ -184,9 +184,11 @@ $$
 
 ## 🟠PID控制器设计
 
-PID控制器的参数`Kp,Ki,Kd`通过经验数据或试凑法很难进行调整得到合适的控制器，我们在得到传递函数之后，可以通过matlab的`pidtune`函数来对参数进行一个简单的设计。
+PID控制器的参数`Kp,Ki,Kd`通过经验数据或试凑法很难进行调整得到合适的控制器，我们在得到传递函数之后，可以通过matlab的`pidtune`函数来对参数进行一个简单的设计。例如我们根据dm_control的cartpole-xml模型的物理参数可以得到其角度的传递函数：
 
-s⁴ + 0.11·s³ − 33.06·s² − 2.694·s
+$$
+P_phi = Phi_s / U_s(0.276·s²)/(s⁴ + 0.11·s³ − 33.06·s² − 2.694·s)
+$$
 
 <p align="center">
   <img src="Photos/Bode_angle.png" width="1100"/>
