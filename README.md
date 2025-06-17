@@ -1,4 +1,4 @@
-# CartPole-v1 Q-Learning Agent
+# 1. CartPole-v1 with Q-Learning
 
 使用 Q-learning 强化学习训练 OpenAI Gym 中的经典平衡控制任务 **CartPole-v1**。
 
