@@ -116,7 +116,7 @@ $$
 调整双闭环PID控制器参数后Cartpole表现：
 
 <p align="center">
-  <img src="Photos/dm_control_cartpole.gif" width="500"/>
+  <img src="https://raw.githubusercontent.com/SelfGala/Inverted-Pendulum/main/Photos/dm_control_cartpole.gif" width="400"/>
 </p>
 
 ## 🟠数学建模：一阶倒立摆动力学模型
