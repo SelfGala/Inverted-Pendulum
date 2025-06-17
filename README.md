@@ -3,7 +3,6 @@
 <h1>Single-Inverted-Pendulum-学习合集</h1>
 <p><i>1. 强化学习Q-learning算法解决Gym的Cartpole-v1模型</i></p>
 <p><i>2. 双环PID控制一阶倒立摆Mujoco仿真</i></p>
-<p><i>3. Matlab模糊PID模拟一阶倒立摆</i></p>
 <p><i>具体代码及README文件见各项目文件夹</i></p>
 
 </div>
