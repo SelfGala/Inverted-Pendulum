@@ -238,3 +238,11 @@ dm_control-Cartpole默认引用方法具体见文件夹，模型参数说明见�
 |               | ctrlrange = `[-1, 1]` |          | 控制范围（实际力：±50N）     |
 | `sensor`      | `accelerometer` | on `cart sensor` | 小车加速度                    |
 |               | `touch`      | on `cart sensor` | 碰撞检测                      |
+
+## 🟠致谢与引用
+
+本项目基于 DeepMind 开源的物理引擎平台 [dm_control](https://github.com/google-deepmind/dm_control) 构建，使用其中的 `cartpole` 环境进行倒立摆仿真和控制器测试。  
+感谢该项目提供了高精度的 MuJoCo 封装接口与标准任务集。
+
+仓库地址：[https://github.com/google-deepmind/dm_control](https://github.com/google-deepmind/dm_control)
+
