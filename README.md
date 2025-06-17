@@ -1,9 +1,11 @@
 # CartPole-v1 Q-Learning Agent
 
 使用 Q-learning 强化学习训练 OpenAI Gym 中的经典平衡控制任务 **CartPole-v1**。
+
 780 Episode后Cartpole表现：
+
 <p align="center">
-  <img src="cartpole_training.gif" width="500"/>
+  <img src="Photos/Cartpole.gif" width="500"/>
 </p>
 
 ## 环境简介
