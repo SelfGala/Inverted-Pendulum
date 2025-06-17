@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>Single-Inverted-Pendulum-学习合集</h1>
+<h1>Single-Inverted-Pendulum-学习记录</h1>
 <p><i>1. 强化学习Q-learning算法解决Gym的Cartpole-v1模型</i></p>
 <p><i>2. 双环PID控制一阶倒立摆Mujoco仿真</i></p>
 
